@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nav5 with flexbox</title>
+    <style>
+      /*https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png  */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        height: 4rem;
+        background: #444;
+        padding: 0 2rem;
+      }
+      header .container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        align-items: center; /* center all items vertically*/
+      }
+      header .container .logo {
+        background: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png')
+          no-repeat left center/contain;
+        height: 4rem;
+        width: 6rem;
+        flex: 2;
+      }
+      header .container nav ul {
+        display: flex;
+        list-style: none;
+        flex: 1;
+      }
+      header .container nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1.35rem;
+      }
+      header .container nav ul li a:hover {
+        background: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

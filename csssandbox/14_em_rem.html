@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Em & Rem Units</title>
+    <!-- by default, root element font size is 16px unless you change it -->
+
+    <!-- em; is a multiplier which determines
+    the pixel value, also it is affected
+    by changes to future font sizes or
+    nesting, not really preferred -->
+    <!-- <style>
+        #box-1 {
+          font-size: 20px;
+        }
+        #box-1 p {
+          font-size: 1.5em;
+          padding: 1em;
+        }
+        #box-1 ul {
+          font-size: 1.2em;
+        }
+      </style> -->
+
+    <!-- rem; root element, also a multiplier
+    -->
+    <style>
+      html {
+        /* mostly it's fine to use font-size:10px so that it's easy
+        to determine the sizes of other elements */
+
+        /* also can use percentage as font-size: 62.5% which is 10px */
+
+        /* by default, font-size is 16px */
+
+        /* rem is used for accessibility */
+
+        font-size: 62.5%;
+      }
+      #box-2 h3 {
+        font-size: 2rem;
+      }
+      #box-2 p {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="box-1">
+      <h3>Box One</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque
+        doloribus unde voluptatibus perspiciatis repellat neque incidunt
+        architecto corrupti itaque.
+      </p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>
+          3
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>
+              3
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>4</li>
+      </ul>
+    </div> -->
+    <div id="box-2">
+      <h3>Box Two</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque
+        doloribus unde voluptatibus perspiciatis repellat neque incidunt
+        architecto corrupti itaque.
+      </p>
+    </div>
+  </body>
+</html>

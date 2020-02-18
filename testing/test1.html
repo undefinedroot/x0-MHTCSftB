@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #chk1 {
+        background: #f4f4;
+        width: 12vw;
+        height: 12vh;
+        transform: translate(200px, 0);
+      }
+      #chk1:checked {
+        transform: none;
+      }
+      div + div {
+        background: #ddd;
+        width: 100px;
+        height: 100px;
+      }
+      div + div:hover {
+        transition: background 5s ease-in-out;
+        background: #f4f4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <input type="checkbox" id="chk1" />
+    </div>
+    <div></div>
+  </body>
+</html>

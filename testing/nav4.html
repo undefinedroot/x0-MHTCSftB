@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>nav4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background: #444;
+      }
+      .container {
+        overflow: auto;
+        height: 50px;
+        max-width: 1024px;
+        margin: auto;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      h1 {
+        float: left;
+        padding: 10px 25px;
+      }
+      ul {
+        list-style: none;
+        float: right;
+      }
+      ul li {
+        float: left;
+        padding: 15px 0px;
+      }
+      ul li a {
+        padding: 15px 15px;
+      }
+      ul li a:hover,
+      ul li a.current {
+        background: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">HBT</a></h1>
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

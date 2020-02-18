@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nav6 Test</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background: #111;
+        height: 5rem;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: auto;
+        background: #f4f4;
+      }
+      .container .logo {
+        background: url('http://source.unsplash.com/daily') no-repeat left
+          center/cover;
+        height: 5rem;
+        width: 12rem;
+      }
+      .container nav {
+        display: flex;
+        align-items: center;
+      }
+      .container ul {
+        background: green;
+        display: flex;
+        list-style: none;
+      }
+      .container ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1.85rem 1.99rem 1.99rem 1.99rem;
+      }
+      .container ul li a:hover {
+        color: #111;
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
